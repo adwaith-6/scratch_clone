@@ -8,8 +8,6 @@ import SayMessageWithTimer from "./looks/SayMessageWithTimer";
 import Size from "./looks/Size";
 import Show from "./looks/Show";
 import Hide from "./looks/Hide";
-import Wait from "./control/Wait";
-import Repeat from "./control/Repeat";
 import HideMessage from "./looks/HideMessage";
 import MoveY from "./motion/MoveY";
 import SpriteClick from "./events/SpriteClick";
@@ -54,12 +52,6 @@ export const getComponent = (key, id) => {
 
     case "FLAG":
         return <Flag comp_id={id} />;
-    
-    case "WAIT":
-      return <Wait comp_id={id} />;
-
-    case "REPEAT":
-      return <Repeat comp_id={id} />;
 
     case "HIDE_MESSAGE":
       return <HideMessage comp_id={id} />;

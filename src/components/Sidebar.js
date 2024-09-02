@@ -114,43 +114,7 @@ export default function Sidebar() {
             {provided.placeholder}
           </ul>
         )}
-      </Droppable>
-
-      {/* Control */}
-      <div className="font-bold"> {"Control"} </div>
-      <Droppable droppableId="sideArea-control" type="COMPONENTS">
-        {(provided) => (
-          <ul
-            className="sideArea-control my-3"
-            {...provided.droppableProps}
-            ref={provided.innerRef}
-          >
-            {controlComponents.map((x, i) => {
-              return (
-                <Draggable
-                  key={`${x}-sideArea-${i}`}
-                  draggableId={`${x}-sideArea`}
-                  index={i}
-                >
-                  {(provided) => (
-                    <li
-                      ref={provided.innerRef}
-                      {...provided.draggableProps}
-                      {...provided.dragHandleProps}
-                      className="my-2"
-                    >
-                      {getComponent(x)}
-                    </li>
-                  )}
-                </Draggable>
-              );
-            })}
-            {provided.placeholder}
-          </ul>
-        )}
-      </Droppable>
-
-      
+      </Droppable>      
     </div>
   );
 }

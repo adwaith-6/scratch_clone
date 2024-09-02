@@ -19,6 +19,5 @@ export const motionComponents = [
   ];
   
   export const eventsComponents = ["FLAG","SPRITE_CLICK"];
-  
-  export const controlComponents = ["WAIT", "REPEAT"];
+
   
